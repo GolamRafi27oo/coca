@@ -208,6 +208,13 @@ nav ul li a:hover {
   line-height: 32px;
   color: #7e8492;
 }
+.send{
+  margin-left: 15vh;
+  margin-right: 13%;
+}
+.send p{
+  margin-left: 10px;
+}
 .sendMail {
   display: flex;
   justify-content: space-between;
@@ -224,6 +231,7 @@ nav ul li a:hover {
   border: none;
   border-radius: 50px;
   transition-duration: 1s ;
+  width: 60%;
 }
 .sendMail input::placeholder {
   color: #1E2238;
@@ -306,8 +314,12 @@ nav ul li a:hover {
   }
   .price {
     font-size: 14px;
-
   }
+  .send{
+    margin-left: 20vh;
+    margin-right: 13%;
+  }
+
 }
 @media screen and (max-width: 1200px) {
   
@@ -333,14 +345,27 @@ nav ul li a:hover {
   .hero {
     margin-left: 5%;
     margin-right: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- 
   }
 
-  .sendMail input {
-    font-size: 12px;
+
+
+  .sendMail {
+    padding: 2px;
+
   }
+  .sendMail input {
+    font-size: 10px;
+  }
+
+  .sendMail button {
+
+    padding: 10px 14px;
+  }
+
+  .mailInput {
+    font-size: 10px;
+  }
+
   .itemTwo{
     padding: 0px;
   }
@@ -350,7 +375,6 @@ nav ul li a:hover {
   }
   .price {
     font-size: 14px;
-
   }
 
 }
@@ -384,7 +408,12 @@ nav ul li a:hover {
 
   .itemOne p {
     width: 100%;
+    font-size: 12px;
     padding:0px 5px;
+  }
+
+  .itemTwo{
+    padding: 100px;
   }
   .hero {
     margin-left: 0%;
@@ -392,12 +421,22 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
   }
+  .send{
+    margin-left: 4vh;
+    margin-right: 0%;
+  }
 }
 
 @media screen and (max-width: 509px) {
-
-  .itemOne ul{
-    display: contents;
+  .itemTwo{
+    padding: 0px;
   }
-
+  .send{
+    margin-left: 0vh;
+    margin-right: 0%;
+  }
+  .sendMail button{
+    font-weight: normal;
+    font-size: 10px;
+  } 
 }
