@@ -181,7 +181,7 @@ nav ul li a:hover {
   color: #8635FD;
 }
 section{
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 .hero {
 
@@ -434,6 +434,9 @@ section{
     margin-right: 5%;
     display: flex;
     flex-direction: column;
+  }
+  .itemOne h2{
+    width: none;
   }
   .send{
     margin-left: 4vh;
