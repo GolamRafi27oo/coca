@@ -21,35 +21,41 @@ body {
 }
 
 .scroll-container {
-  width: 100%; /* Full width */
-  overflow: hidden; /* Hide overflow */
+  width: 100%; 
+  overflow: hidden;
   background-color: #8635FD;
 }
 
 .scroll-text {
   display: inline-block;
-  white-space: nowrap; /* Prevent text wrapping */
-  animation: scroll 20s linear infinite; /* Smooth scrolling */
+  white-space: nowrap; 
+  animation: scroll 20s linear infinite; 
   font-size: 11px;
-  padding-left: 100%; /* Start outside the viewport */
+  padding-left: 100%;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%); /* Start at the right */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%); /* Move to the left */
+    transform: translateX(-100%);
   }
 }
 
 @media (min-width: 877px) {
   .scroll-container {
-    display: none; /* Show the container for small screens */
+    display: none;
   }
 }
-nav {
-  
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+nav {  
   height: 114px;
   display: flex;
   justify-content: space-between;
@@ -174,7 +180,11 @@ nav ul li a:hover {
 .signin:hover{
   color: #8635FD;
 }
+section{
+  padding-top: 10vh;
+}
 .hero {
+
   margin: 0% 5%;
   display: grid;
   grid-template-columns: 2fr 1fr;
