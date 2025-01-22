@@ -192,6 +192,7 @@ section{
   padding: 20px;
 }
 .itemOne h2 {
+  display:inline;
   padding: 6px 16px;
   gap: 10px;
   font-weight: 400;
@@ -381,12 +382,6 @@ section{
     font-size: 12px;
   }
 
-}
-@media screen and (min-width: 917px) { 
-  .itemOne h2 {
-    width: 255px;
-
-  }
 }
 @media screen and (max-width: 917px) {
   #signUp{
